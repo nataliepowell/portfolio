@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Natalie Powell's Graphics Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css?family=Archivo|Arsenal|Open+Sans:300&display=swap" rel="stylesheet">
+
+<style type="text/css">
+
+html {
+	scroll-behavior: smooth;
+}
+
+.container {
+	padding: 40px;
+}
+
+#toolbar {
+	width:100%;
+	height: 165px;
+	background-color:#fff;
+	border-bottom:3px solid #000;
+	transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+	position: fixed;
+	top:0px;
+	left:0px;
+	z-index: 10000;
+}
+
+a.button {
+	display:block;
+	width:164px;
+	font-family: Open Sans;
+	text-transform:lowercase;
+	font-size:12px;
+	font-style:normal;
+	line-height:16px;
+	color:#fff;
+	background-color:#000;
+	transition: 0.2s;
+	letter-spacing:2px;
+	text-align:center;  
+	text-decoration: none;
+	margin:0px;
+	margin-bottom:2px;
+	padding-top:2px;
+	border-left:3px solid #ccc;
+	border-right:3px solid #ccc;
+	float:right;
+}
+
+a.button:hover
+{
+	color:#000;
+	background-color:#fff;
+	border-left:3px solid #ccc;
+	border-right:3px solid #ccc;
+}
+
+h1 {
+	Font-family: 'Archivo', sans-serif;
+	font-size: 55px;
+	transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+	letter-spacing: 4px;
+	padding-left: 30px;
+	text-transform:uppercase;
+}
+H2
+{
+	Font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	padding-left: 30px;
+	transition: 0.1s; /* Adds a transition effect when fading opacity */
+	position:absolute;
+	letter-spacing: 1px;
+	text-transform:lowercase;
+	left:0px;
+	top: 82px;
+}
+h3 {
+	position: absolute;
+	right: 30px;
+	top:5px;
+	transition: 0.1s;
+}
+
+h4 {
+	position: relative;
+	top: 100px;
+	Font-family: 'Open Sans', sans-serif;
+	font-size: 56px;
+	color:#000;
+}
+Body {
+background:#f5f5f5;
+background-image:url(http://i.imgur.com/GnrHME5.png);
+background-attachment:fixed;
+background-position:top left;
+background-repeat:repeat;
+}
+</style>
+
+<script>
+
+// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+  if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
+	//document.getElementsByClassName("toolbar").height="100px";
+	document.getElementById("toolbar").style.height="80px";
+	document.getElementById("myName").style.fontSize = "35px";
+	document.getElementById("education").style.visibility = "hidden";
+	document.getElementById("navbar").style.top = "30px";
+	document.getElementById("icons").style.visibility = "hidden";
+  } else {
+    document.getElementById("toolbar").style.height = "145px";
+	document.getElementById("myName").style.fontSize = "50px";
+	document.getElementById("education").style.visibility = "visible";
+	document.getElementById("navbar").style.top = "110px";
+	document.getElementById("icons").style.visibility = "visible";
+  }
+}
+</script>
+
+</head>
+<body>
+<div id="toolbar">
+	<h1 id="myName">
+		NATALIE POWELL
+	</h1>
+	<h2 id="education">
+		Computer Science Undergraduate Student<br/>
+		Rutgers University, New Brunswick
+	</h2>
+	<h3 id="icons">
+		<a href="mailto:natalie.powell@rutgers.edu" target="_blank"><img src="https://cdn4.iconfinder.com/data/icons/defaulticon/icons/png/256x256/mail.png" style="width:40px; height:40px"></a>
+		<br/>
+		<a href="https://www.linkedin.com/in/natalie-powell/" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_square_black-512.png" style="width:40px; height:40px"></a>
+	</h3>
+	<div id="navbar" style="position:absolute; right:30px; top:120px; padding:2px; margin-top:4px; transition: 0.4s;">
+	<a class="button" href="#kids">Marketing + Branding</a>
+	<a class="button" href="/">Graphic Design</a>
+	<a class="button" href="/">Java Programming</a>
+	<a class="button" href="/">Web Development</a>
+	</div>
+
+
+</div>
+
+<h4>
+	hello
+</h4>
+
+	<div class="container">
+		<embed src="file:///Users/nataliepowell/Documents/Graphics%20Portfolio/Key%20Club%20Info%20Session%20Presentation.pdf#toolbar=0" type="application/pdf" width="50%" height="500px" />
+	</div>
+	<div class="container" id="kids">
+		<embed src="file:///Users/nataliepowell/Documents/Graphics%20Portfolio/AP%20Psychology%20Children's%20Book.pdf#toolbar=0" type="application/pdf" width="50%" height="500px" />
+	</div>
+	<div class="container">
+		<embed src="file:///Users/nataliepowell/Documents/Graphics%20Portfolio/Lesson%20Plan%20Worksheet.pdf#toolbar=0" type="application/pdf" width="50%" height="500px" />
+	</div>
+</body>
+</html>
