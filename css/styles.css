@@ -52,8 +52,8 @@
     .card {
       width: 100%; } }
   .card:hover .card__inner {
-    background-color: #1abc9c;
-    transform: scale(1.05); }
+    transform: scale(1.05);
+    background-image: translateY(-10px); }
   .card__inner {
     width: 100%;
     height: 300px;
@@ -85,7 +85,7 @@
     justify-content: center;
     align-items: left;
     color: #4a4a4a;
-    font-size: 20px; }
+    font-size: 17px; }
     .card__expander .fa {
       font-size: 1.25em;
       position: absolute;
@@ -104,7 +104,7 @@
     margin-top: 0;
     opacity: 0; }
   .card.is-expanded .card__inner {
-    background-color: #1abc9c; }
+    background-color: #949fb0; }
     .card.is-expanded .card__inner:after {
       content: "";
       opacity: 1;
@@ -114,8 +114,8 @@
       position: absolute;
       bottom: -30px;
       left: calc(50% - 15px);
-      border-left: 15px solid #f2f2f2;
-      border-right: 15px solid #f2f2f2;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
       border-bottom: 15px solid #f2f2f2; }
     .card.is-expanded .card__inner .fa:before {
       content: "\f115"; }
@@ -132,7 +132,6 @@
     pointer-events: none;
     opacity: 0.5; }
   .card.is-inactive:hover .card__inner {
-    background-color: #949fb0;
     transform: scale(1); }
 
 @media screen and (min-width: 992px) {
@@ -203,7 +202,7 @@ div.owl-next, div.owl-prev {
 
 .slide-text p {
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 200;
   margin: 0 0 50px 0; }
 
@@ -216,7 +215,7 @@ div.owl-next, div.owl-prev {
   right: -70px; }
 
 i {
-  color: darkgray; }
+  color: #545454; }
 
 @media (min-width: 870px) {
   .owl-item img {

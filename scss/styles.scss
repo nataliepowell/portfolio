@@ -93,8 +93,8 @@ $turquoise: #1abc9c;
 
   &:hover {
     .card__inner {
-      background-color: $turquoise;
       transform: scale(1.05);
+      background-image: translateY(-10px);
     }
   }
 
@@ -135,12 +135,11 @@ $turquoise: #1abc9c;
     width: 100%;
     position: relative;
     z-index: 100;
-    
     display: flex;
     justify-content: center;
     align-items: left;
     color:rgb(74, 74, 74);
-    font-size: 20px;
+    font-size: 17px;
     
     .fa {
       font-size: 1.25em;
@@ -175,7 +174,7 @@ $turquoise: #1abc9c;
   &.is-expanded {
 
     .card__inner {
-      background-color: $turquoise;
+      background-color:$gray;
       
       &:after{
         content: "";
@@ -221,7 +220,6 @@ $turquoise: #1abc9c;
     
     &:hover {
       .card__inner {
-        background-color: $gray;
         transform: scale(1);
       }
     }
@@ -320,7 +318,7 @@ div.owl-next, div.owl-prev {
 }
 .slide-text p {
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 200;
   margin: 0 0 50px 0;
 }
@@ -336,7 +334,7 @@ div.owl-next, div.owl-prev {
 }
 
 i {
-  color:darkgray;
+  color:#545454;
 }
 
 @media (min-width: 870px) {
