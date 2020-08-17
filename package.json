@@ -9,7 +9,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "homepage": "https://nataliepowell.github.io/portfolio",
+  "homepage": "https://nataliepowell.megit",
   "dependencies": {
     "@material-ui/icons": "^4.9.1",
     "aos": "^2.3.4",
